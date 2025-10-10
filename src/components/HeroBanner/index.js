@@ -1,7 +1,7 @@
 import "../styles.css";
 
 const onClickResume = () => {
-    window.open('/ResumeSandini.pdf', '_blank');
+    window.open(process.env.PUBLIC_URL + '/ResumeSandini.pdf', '_blank');
 }
 
 const onClickLinkedIn = () => {
@@ -115,5 +115,6 @@ const HeroBanner = () => {
     </div>
   );
 };
+
 
 export default HeroBanner;
